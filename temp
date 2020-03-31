@@ -1,0 +1,43 @@
+http://robotframework.org/robotframework/#standard-libraries
+
+10.26
+
+设计后端用python bottle作为框架。计划用bottle swagger显示api接口，但失败了
+前端用vue 框架， 使用vue-cli , axios ,element-ui， 
+遇到的问题：前端向后端请求时有跨域问题。
+解决方法：在前端将加proxyTable， 在后端response中加跨域字段。
+
+11.23
+打算写一个图书管理系统
+
+创建网络命名空间netns1
+ip netns add netns1
+添加veth对， veth1,veth0
+ip link add veth0 type veth peer name veth1
+将veth1 放到netns1命名空间中去
+ip link set veth1 netns netns1
+在netns1命名空间中查看网口信息
+ip netns exec netns1 ip link show
+将veth1 设置10.1.1.1
+ip netns exec netns1 ip addr add 10.1.1.1/24 dev veth1
+将veth1设置为up状态
+ip netns exec netns1 ip link set dev veth1 up
+将veth0 设置10.1.1.2
+ip addr add 10.1.1.2/24 dev veth0
+将veth0设置为up状态
+ip link set dev veth0 up
+
+添加一个网桥bridge1
+brctl  addbr bridge1
+
+查看路由表
+ip route list 
+netstat -rn 
+
+
+
+
+github 搭建博客
+1. 先要有一个github账户：https://github.com/  , 比如我的账户名为aprodigalson
+2. 创建一个repository 名字为<username>.github.io , aprodigalson.github.io
+3. 
