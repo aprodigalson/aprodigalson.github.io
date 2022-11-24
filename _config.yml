@@ -3,4 +3,4 @@ theme: jekyll-theme-cayman
 include:
   - test.md
   - README.md
-  - network/vlan.md
+  - network/*
