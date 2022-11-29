@@ -17,7 +17,7 @@
 
 
 # 原理？
-![image info](./test.png)
+![image info](..//test.png)
 # 参考链接
 
 https://www.ietf.org/rfc/rfc2674.txt

@@ -4,3 +4,4 @@ include:
   - test.md
   - README.md
   - network/*
+  - k8s/*
