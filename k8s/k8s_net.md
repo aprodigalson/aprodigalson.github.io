@@ -16,7 +16,6 @@ https://github.com/containernetworking/cni
 
 # 解决方案
 
-
 ## 隧道 overlay
 
 ## 路由
@@ -24,7 +23,11 @@ https://github.com/containernetworking/cni
 # flannel
 https://github.com/flannel-io/flannel#deploying-flannel-manually
 
+backend
+
 # 参考链接
 
 https://kubernetes.io/zh-cn/docs/concepts/services-networking/
 https://kubernetes.io/zh-cn/docs/concepts/cluster-administration/networking/
+
+
